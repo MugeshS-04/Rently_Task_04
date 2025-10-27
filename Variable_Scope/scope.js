@@ -36,3 +36,18 @@ sample()
 console.log(x) // Error: x is not defined
 console.log(y) // Error: y is not defined
 console.log(z) // 300
+
+//Global scope
+
+let a = 50
+const b = 100
+var c = 150
+
+function display()
+{
+    console.log(a) // 50
+    console.log(b) // 100
+    console.log(c) // 150
+}
+
+display()

@@ -19,13 +19,16 @@ let stud = {
     }
 }
 
+//ternary operator
 let data = stud.course ? stud.course.favourite ? stud.course.favourite.fullycompleted ? stud.course.favourite.fullycompleted : stud.course.favourite : stud.course : stud
 
+//if condition
 let data2 = () => {
     if(stud.course) if(stud.course.favourite) if(stud.course.favourite.fullycompleted) return stud.course.favourite.fullycompleted
     else return stud
 }
 
+//try catch
 let data3 = () => {
     try{
         return stud.course.favourite.fullycompleted
@@ -36,9 +39,13 @@ let data3 = () => {
     }
 }
 
+//optional chaining
+let data4 = stud?.course?.favourite?.fullycompleted ?? "Not Available"
+
 console.log(data)
 console.log(data2())
 console.log(data3())
+console.log(data4)
 
 console.log(student)
 

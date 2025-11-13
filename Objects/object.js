@@ -42,6 +42,27 @@ let data3 = () => {
 //optional chaining
 let data4 = stud?.course?.favourite?.fullycompleted ?? "Not Available"
 
+
+//printing nested object values
+for(let i in stud)
+{
+    if(typeof stud[i] === "object")
+    {
+        for(let j in stud[i])
+        {
+            console.log(j +" : " + stud[i][j])
+            if(typeof stud[i][j] === "object")
+            {
+                for(let k in stud[i][j])
+                {
+                    console.log(k +" : " + stud[i][j][k])
+                }
+            }
+        }
+    }
+    console.log(i +" : " + stud[i])
+}
+
 console.log(data)
 console.log(data2())
 console.log(data3())

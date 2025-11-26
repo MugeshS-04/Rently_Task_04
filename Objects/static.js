@@ -9,7 +9,7 @@ emp.prototype.display = function(name1, age, position) {
     this.name1 = name1;
     this.age = age;
     this.position = position;
-    console.log(`Name: ${this.name1}, Age: ${this.age}, Position: ${this.position}`);
+    console.log(`Name: ${this.name1}, Age: ${this.age}, Positions: ${this.position}`);
 }
 
 //Static method
